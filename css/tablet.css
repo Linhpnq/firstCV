@@ -1,0 +1,30 @@
+@media screen and (max-width: 1036px) {
+  /* MAVBAR SECTION */
+  .center {
+    width: 75px;
+  }
+  .center-text {
+    display: none;
+  }
+  /* ABOUT SECTION */
+  /* JOB INFO SECTION */
+  #job-info .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  /* CERTIFICATE SECTION */
+  #certificate .section-content {
+    row-gap: 0;
+  }
+  #cer1,
+  #cer2 {
+    flex-direction: column;
+  }
+  /* PRJOECT SECTION */
+  #project .project-icon {
+    flex-direction: column;
+  }
+  #project .project-detail {
+    justify-content: space-evenly;
+  }
+}

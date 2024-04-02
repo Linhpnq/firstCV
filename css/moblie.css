@@ -1,0 +1,54 @@
+@media screen and (max-width: 500px) {
+  /* MAVBAR SECTION */
+  #nav-bar .container {
+    flex-direction: column;
+  }
+  .nav-box {
+    border: none;
+  }
+  .center {
+    display: none;
+  }
+  /* ABOUT SECTION */
+  #about .container {
+    flex-direction: column;
+  }
+  #personal-info,
+  #target {
+    padding-left: 0;
+  }
+  /* JOB INFO SECTION */
+  #job-info .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  /* CERTIFICATE SECTION */
+  #certificate .section-content {
+    grid-template-columns: 1fr;
+  }
+  #cer2::before {
+    display: none;
+  }
+  #cer2,
+  #cer3 {
+    border-top: 1px solid #d6c08d;
+    padding-top: 15px;
+  }
+  #cer3 {
+    flex-direction: column;
+  }
+  /* PRJOECT SECTION */
+  #project .section-content {
+    flex-direction: column;
+  }
+  #project .project-detail {
+    flex-direction: column;
+  }
+  #project .project-info {
+    flex-direction: column;
+  }
+  #project .project-icon {
+    flex-direction: column;
+    align-self: flex-start;
+  }
+}

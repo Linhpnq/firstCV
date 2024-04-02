@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #3176f8;
+  --secondary-color: #585858;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+section > .container {
+  padding: 25px 50px;
+}
+img {
+  width: 100%;
+}
+/* NAVIGATION BAR */
+.right {
+  border-right: 1px solid var(--secondary-color);
+}
+.center {
+  border-right: 1px solid var(--secondary-color);
+  border-left: 1px solid var(--secondary-color);
+}
+.left {
+  border-left: 1px solid var(--secondary-color);
+}
+#nav-bar a:link,
+#nav-bar a:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: white;
+  color: var(--secondary-color);
+}
+#nav-bar a:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+/* TARGET AND INFO */
+#personal-info ul {
+  line-height: 1.5;
+  list-style: none;
+  padding-left: 0;
+}
+.emailInput {
+  width: 300px;
+}
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 40%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* *STYLE JOB INFO SECTION* */
+/*Grid for overral layout */
+#job-info .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  column-gap: 20px;
+  row-gap: 20px;
+  /*  */
+}
+/* Grid for each cell */
+.job-section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 75px 50px auto;
+
+  border: 1px solid var(--secondary-color);
+}
+.job-icon,
+.box-title {
+  align-self: center;
+}
+.box-content {
+  grid-column: 1 / -1;
+}
+.box-content ul > li::marker {
+  color: var(--main-color);
+}
+.view-box {
+  cursor: pointer;
+  background-color: #f2ad70;
+  color: white;
+}
+/* Experience */
+.present {
+  padding: 2px 4px;
+}
+/* hobby */
+.hobby .hobby-box {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+/*Language & skill grid cell*/
+.bar {
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.color-bar .blue {
+  background: var(--main-color);
+}
+.color-bar .gray {
+  background: #c5c5c5;
+}
+/* CERTIFICATE SECTION */
+#certificate .section-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 10px;
+}
+#certificate img {
+  width: 250px;
+}
+#cer2::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  background-color: #d6c08d;
+  bottom: 0;
+  top: 0;
+  left: -15px;
+}
+#cer3 {
+  grid-column: 1 / -1;
+  border-top: 1px solid #d5c08d;
+}
+/* PROJECT SECTION */
+/* BOOTSTRAP  */
+.flex-basis-45 {
+  flex-basis: 45%;
+}
+.flex-basis-70 {
+  flex-basis: 70%;
+}
+.text-black {
+  color: black;
+}
+.text-gray {
+  color: var(--secondary-color);
+}
+.text-white {
+  color: white;
+}
+.hidden {
+  display: none;
+}
